@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Автосалон - Нескреби Микити</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="welcome-message">
+        <h1>Ласкаво просимо в автосалон Нескреби Микити</h1>
+        <p>Ваш надійний партнер у світі автомобілів</p>
+    </div>
+
+    <div class="about-us-section section">
+        <h2>Про нас</h2>
+        <p>Автосалон Нескреби Микити надає найкращі автомобілі від провідних світових брендів. Ми пишаємося наданням високоякісних та надійних автомобілів для наших клієнтів.</p>
+    </div>
+
+    <nav>
+        <a href="#" onclick="showCars('bmw')">BMW</a>
+        <a href="#" onclick="showCars('audi')">Audi</a>
+        <a href="#" onclick="showCars('mercedes')">Mercedes</a>
+        <a href="#" onclick="showSpecialOffers()">Спеціальні пропозиції</a>
+        <a href="#" onclick="showContact()">Контакти</a>
+    </nav>
+
+    <div id="carSection"></div>
+
+    <section id="specialOffers" class="special-offers" style="display: none;">
+        <h2>Найкращі пропозиції цього місяця</h2>
+        <div class="special-offer">
+            <img src="images/new_offer1.jpg.jpg" alt="Нова спеціальна пропозиція 1">
+            <p>Спеціальні ціни на зимову резину - готуйте свій автомобіль до зими!</p>
+        </div>
+        <div class="special-offer">
+            <img src="images/new_offer2.jpg.jpeg.jfif" alt="Нова спеціальна пропозиція 2">
+            <p>Отримайте повний комплекс тюнінгу для вашого автомобіля:</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact" style="display: none;">
+        <div class="contact-info">
+            <h2>Контакти</h2>
+            <div class="contact-details">
+                <p>Ми завжди раді відповісти на ваші питання. Зв'яжіться з нами:</p>
+                <p>Email: <a href="mailto:info@neskreb-nikiti-auto.com">info@neskreb-nikitа-auto.com</a></p>
+                <p>Телефон: +380 (XXX) XXX-XXX</p>
+            </div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <p>Ваші контактні дані:</p>
+                <label for="name">Ваше ім'я:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Ваше повідомлення:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Надіслати</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Автосалон Нескреби Микити</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
